@@ -246,6 +246,7 @@ header .responsive-menu li a{
 header.sticky .responsive-menu li a,
 header .responsive-menu li a {
     font-size: 30px;
+    color: white;
 }
 
 header .navbar-nav-menu li a:hover, header .responsive-menu li a:hover {
