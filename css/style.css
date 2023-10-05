@@ -5,7 +5,7 @@
 
 body {
     position: relative;
-    color:purple;
+    color:white
 }
 
 
@@ -45,7 +45,7 @@ textarea:focus {
 #header-bg {
     height: 100vh;
     width: 100%;
-    background: url( https://downloader.la/temp/[Downloader.la]-651e80e14251d.jpg) no-repeat;
+    background: url(tr.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     display: block;
@@ -110,7 +110,19 @@ header .navbar-nav-menu li {
     list-style: none;
 }
 
-header .navbar-nav-menu li a {
+
+/* Apply styles to the <li> elements */
+/* .navbar-nav-menu li a {
+    position: relative;
+    display: block;
+    padding: 10px !important;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+} */
+
+.navbar-nav-menu li a {
     position: relative;
     display: block;
     padding: 10px !important;
@@ -120,8 +132,15 @@ header .navbar-nav-menu li a {
     transition: .3s ease-in-out;
 }
 
+.blurred {
+    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the background color and opacity as needed */
+}
+
 header .navbar-nav-menu li .active {
-    color: #a640ff !important;
+    color: yellow !important;
+
+    
 }
 
 
@@ -134,7 +153,7 @@ header .navbar-nav-menu li .active {
         padding: 0.4em 2em;
         outline: none;
         border: none;
-        background-color: #a640ff;
+        background-color: yellow;
         overflow: hidden;
         border-radius: 32px !important;
         transition: color 0.4s ease-in-out;
@@ -161,7 +180,7 @@ header .navbar-nav-menu li .active {
       button:hover {
         cursor: pointer;
         color: #161616;
-        box-shadow: 0 0 5px #a640ff;
+        box-shadow: 0 0 5px yellow;
 
 
       }
@@ -178,7 +197,7 @@ header .navbar-nav-menu li .active {
     position: absolute;
     left: 0;
     top: 0px;
-    background: #ddd;
+    /* background: #ddd; */
     z-index: 10000;
     padding: 20px;
     padding-top: 70px;
@@ -195,8 +214,12 @@ header .responsive-menu .navbar-nav .nav-link {
 
 header.sticky {
     padding: 5px 100px;
-    background: #dddddd;
+    /* background: #dddddd; */
+    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the background color and opacity as needed */
+    
 }
+
 
 .menu-icon {
     display: none;
@@ -229,7 +252,7 @@ header .responsive-menu li a {
 }
 
 header .navbar-nav-menu li a:hover, header .responsive-menu li a:hover {
-    color: #a640ff;
+    color: yellow;
 }
 
 .logo .logo-black {
@@ -277,17 +300,17 @@ header.sticky .logo .logo-black {
     height: 60px;
     border: 2px solid #acb3b3;
     border-radius: 50px;
-    background:#a640ff ;
-    color: #fff;
+    background:rgb(213, 213, 27) ;
+    color: #000;
     padding: 10px;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 
 /* .type-area .cv:hover {
-    border-color: #a640ff;
+    border-color: yellow;
     color: #fff;
-	background: #a640ff;
+	background: yellow;
 } */
 
 .about {
@@ -328,8 +351,8 @@ header.sticky .logo .logo-black {
 }
 
 /* .about-section-icon i:hover {
-    color: #a640ff;
-    border-color: #a640ff;
+    color: yellow;
+    border-color: yellow;
 } */
 
 .service {
@@ -355,7 +378,7 @@ header.sticky .logo .logo-black {
 }
 
 /* .service-content:hover {
-    border-color: #a640ff;
+    border-color: yellow;
 }
 
 .service-content h2 {
@@ -364,14 +387,14 @@ header.sticky .logo .logo-black {
 
 .service-content i {
     font-size: 50px;
-    color: #a640ff;
+    color: yellow;
     padding: 15px;
 } */
 
 .border-div {
     width: 0px;
     transition: 1.5s ease-in-out;
-    border: 2px solid #a640ff;
+    border: 2px solid yellow;
     position: relative;
     opacity: 0;
     visibility: hidden;
@@ -397,9 +420,9 @@ header.sticky .logo .logo-black {
 .hire-section button {
     width: 120px;
     height: 50px;
-    border: 2px solid #a640ff;
+    border: 2px solid yellow;
     color: #fff;
-    background: #a640ff;
+    background: yellow;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
@@ -408,8 +431,8 @@ header.sticky .logo .logo-black {
 
 /* .hire-section button:hover {
     background: transparent;
-    border-color: #a640ff;
-    color: #a640ff;
+    border-color: yellow;
+    color: yellow;
 } */
 
 .client-section {
@@ -527,9 +550,9 @@ ul.filters > li.active > a {
 .card-hover button {
     width: 120px;
     height: 40px;
-    border: 2px solid #a640ff;
+    border: 2px solid yellow;
     color: #fff;
-    background: #a640ff;
+    background: yellow;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
@@ -538,7 +561,7 @@ ul.filters > li.active > a {
 
 .card-hover button:hover {
     background: transparent;
-    border-color: #a640ff;
+    border-color: yellow;
 }
 
 
@@ -555,7 +578,7 @@ ul.filters > li.active > a {
 
 .owl-carousel i {
     font-size: 75px;
-    color: #a640ff;
+    color: yellow;
 }
 
 .owl-carousel .owl-item img {
@@ -568,7 +591,7 @@ ul.filters > li.active > a {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #a640ff;
+    background: yellow;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -623,7 +646,7 @@ ul.filters > li.active > a {
 
 .section-width i {
     font-size: 50px;
-    color: #a640ff;
+    color: yellow;
 }
 
 .form-section,
@@ -656,7 +679,7 @@ ul.filters > li.active > a {
     height: 50px;
     color: #fff;
     background: #f45795;
-    border: 1.5px solid #a640ff;
+    border: 1.5px solid rgb(192, 192, 81);
     border-radius: 5px;
     cursor: pointer;
     transition: .3s ease-in-out;
@@ -855,7 +878,7 @@ ul.filters > li.active > a {
         top: 10px;
     }
     .logo{
-      color:  #a640ff;
+      color:  yellow;
       margin-top:150px;
       font-weight: 100;
     }
