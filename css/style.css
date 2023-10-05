@@ -5,7 +5,9 @@
 
 body {
     position: relative;
+    color:purple;
 }
+
 
 ul,
 li {
@@ -43,7 +45,7 @@ textarea:focus {
 #header-bg {
     height: 100vh;
     width: 100%;
-    background: url(../webimg/header-bg.jpg) no-repeat;
+    background: url( https://downloader.la/temp/[Downloader.la]-651e80e14251d.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     display: block;
@@ -58,12 +60,7 @@ textarea:focus {
     overflow: hidden;
 }
 
-.logo img {
-    width: 100px;
-    height: 80px;
-    position: relative;
-    z-index: 1000000000;
-}
+/*  */
 
 .type-up {
     padding-top: 20px;
@@ -94,9 +91,9 @@ header .logo {
     float: left;
 }
 
-header .black {
+/* header .black {
     color: #000 !important;
-}
+} */
 
 header .navbar-nav-menu {
     position: relative;
@@ -124,8 +121,54 @@ header .navbar-nav-menu li a {
 }
 
 header .navbar-nav-menu li .active {
-    color: #f45793 !important;
+    color: #a640ff !important;
 }
+
+
+    button {
+        z-index: 1;
+        position: relative;
+        font-size: inherit;
+        font-family: inherit;
+        color: white;
+        padding: 0.4em 2em;
+        outline: none;
+        border: none;
+        background-color: #a640ff;
+        overflow: hidden;
+        border-radius: 32px !important;
+        transition: color 0.4s ease-in-out;
+        margin-top: 0.4rem;
+        margin-top: 8px !important;
+      }
+      
+      button::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: #ffffff;
+        transform-origin: center;
+        transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+        transition: transform 0.45s ease-in-out;
+      
+      }
+      
+      button:hover {
+        cursor: pointer;
+        color: #161616;
+        box-shadow: 0 0 5px #a640ff;
+
+
+      }
+      
+      button:hover::before {
+        transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+      }
 
 .responsive-menu {
     width: 100%;
@@ -186,7 +229,7 @@ header .responsive-menu li a {
 }
 
 header .navbar-nav-menu li a:hover, header .responsive-menu li a:hover {
-    color: #f45793;
+    color: #a640ff;
 }
 
 .logo .logo-black {
@@ -234,18 +277,18 @@ header.sticky .logo .logo-black {
     height: 60px;
     border: 2px solid #acb3b3;
     border-radius: 50px;
-    background: transparent;
+    background:#a640ff ;
     color: #fff;
     padding: 10px;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 
-.type-area .cv:hover {
-    border-color: #f45793;
+/* .type-area .cv:hover {
+    border-color: #a640ff;
     color: #fff;
-	background: #f45793;
-}
+	background: #a640ff;
+} */
 
 .about {
     display: block;
@@ -284,10 +327,10 @@ header.sticky .logo .logo-black {
     color: #5d5b5b;
 }
 
-.about-section-icon i:hover {
-    color: #f45793;
-    border-color: #f45793;
-}
+/* .about-section-icon i:hover {
+    color: #a640ff;
+    border-color: #a640ff;
+} */
 
 .service {
     margin-top: 100px;
@@ -311,8 +354,8 @@ header.sticky .logo .logo-black {
     transition: 1.5s ease-in-out;
 }
 
-.service-content:hover {
-    border-color: #f45793;
+/* .service-content:hover {
+    border-color: #a640ff;
 }
 
 .service-content h2 {
@@ -321,14 +364,14 @@ header.sticky .logo .logo-black {
 
 .service-content i {
     font-size: 50px;
-    color: #f45793;
+    color: #a640ff;
     padding: 15px;
-}
+} */
 
 .border-div {
     width: 0px;
     transition: 1.5s ease-in-out;
-    border: 2px solid #f45793;
+    border: 2px solid #a640ff;
     position: relative;
     opacity: 0;
     visibility: hidden;
@@ -354,20 +397,20 @@ header.sticky .logo .logo-black {
 .hire-section button {
     width: 120px;
     height: 50px;
-    border: 2px solid #f45793;
+    border: 2px solid #a640ff;
     color: #fff;
-    background: #f45793;
+    background: #a640ff;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
     transition: .5s ease-in-out;
 }
 
-.hire-section button:hover {
+/* .hire-section button:hover {
     background: transparent;
-    border-color: #f45793;
-    color: #f45793;
-}
+    border-color: #a640ff;
+    color: #a640ff;
+} */
 
 .client-section {
     background: #eee;
@@ -484,9 +527,9 @@ ul.filters > li.active > a {
 .card-hover button {
     width: 120px;
     height: 40px;
-    border: 2px solid #f45793;
+    border: 2px solid #a640ff;
     color: #fff;
-    background: #f45793;
+    background: #a640ff;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
@@ -495,7 +538,7 @@ ul.filters > li.active > a {
 
 .card-hover button:hover {
     background: transparent;
-    border-color: #f45793;
+    border-color: #a640ff;
 }
 
 
@@ -512,7 +555,7 @@ ul.filters > li.active > a {
 
 .owl-carousel i {
     font-size: 75px;
-    color: #f45793;
+    color: #a640ff;
 }
 
 .owl-carousel .owl-item img {
@@ -525,7 +568,7 @@ ul.filters > li.active > a {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #f45793;
+    background: #a640ff;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -580,7 +623,7 @@ ul.filters > li.active > a {
 
 .section-width i {
     font-size: 50px;
-    color: #f45793;
+    color: #a640ff;
 }
 
 .form-section,
@@ -613,7 +656,7 @@ ul.filters > li.active > a {
     height: 50px;
     color: #fff;
     background: #f45795;
-    border: 1.5px solid #f45793;
+    border: 1.5px solid #a640ff;
     border-radius: 5px;
     cursor: pointer;
     transition: .3s ease-in-out;
@@ -811,8 +854,13 @@ ul.filters > li.active > a {
         overflow: hidden;
         top: 10px;
     }
+    .logo{
+      color:  #a640ff;
+      margin-top:150px;
+      font-weight: 100;
+    }
 
-    .logo img,
+    .logo ,
     header.sticky .logo {
         display: none !important;
     }
