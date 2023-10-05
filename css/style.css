@@ -132,10 +132,7 @@ header .navbar-nav-menu li {
     transition: .3s ease-in-out;
 }
 
-.blurred {
-    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
-    background-color: rgba(255, 255, 255, 0.3); /* Adjust the background color and opacity as needed */
-}
+
 
 header .navbar-nav-menu li .active {
     color: yellow !important;

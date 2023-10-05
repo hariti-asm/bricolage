@@ -26,24 +26,89 @@ html{
     overflow-x: hidden;
 }
 .header{
-    padding: 2rem 7%;
+    padding: 2rem 7% ;
     position: fixed;
     left: 0;
     right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--headerclr);
+    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the background color and opacity as needed */
     z-index: 10000;
 }
-#logo{
-    color: var(--mainclr);
-    font-size: 30px;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s ease-in-out;
+    padding: 10px 100px;
+    z-index: 1000000000000000000;
+}
+
+header .logo {
+    position: relative;
+    float: left;
+}
+
+/* header .black {
+    color: #000 !important;
+} */
+
+header .nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: initial;
+    padding-top: 17px;
+    float: right;
+}
+
+header .nav li {
+    position: relative;
+    list-style: none;
+}
+
+
+/* Apply styles to the <li> elements */
+/* .navbar-nav-menu li a {
+    position: relative;
+    display: block;
+    padding: 10px !important;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+} */
+
+.navbar-nav-menu li a {
+    position: relative;
+    display: block;
+    padding: 10px !important;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+
+
+
+header .navbar-nav-menu li .active {
+    color: yellow !important;
+
+    
 }
 .nav a{
-    color: white;
+    color: black;
     font-size: 1.5rem;
     margin-left: 1rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
 }
 .nav a:hover{
     color: var(--mainclr);
@@ -227,8 +292,10 @@ transform: translateY(-25px);
     padding: 0 1rem;
 }
 .our-services{
-    padding: 5rem 7%;
-    background: rgba(10, 10, 10, 0.78);
+    padding: 7rem 7%;
+    /* background: rgba(10, 10, 10, 0.78); */
+    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the background color and opacity as needed */
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -243,6 +310,11 @@ transform: translateY(-25px);
 .our-services h1 span{
     color: var(--mainclr);
 }
+.inner-service img {
+    width: 100%; /* Ensures the image takes up 100% of the container's width */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
 .main-service{
     margin-top: 15px;
     display: flex;
@@ -272,6 +344,9 @@ transform: translateY(-25px);
 .inner-service a:hover{
     background: var(--headerclr);
     color: white;
+    transform: scale(1.05); /* Adjust this value for the desired zoom level */
+  transition: 0.5s;
+  z-index: 200;
 }
 .our-gallery{
     padding: 4rem 7%;
@@ -331,6 +406,9 @@ transform: translateY(-25px);
 }
 .inner-review:hover{
     background: var(--mainclr);
+    transform: scale(1.05); /* Adjust this value for the desired zoom level */
+  transition: 0.5s;
+  z-index: 200;
 }
 .inner-review:hover i{
     color: white;
